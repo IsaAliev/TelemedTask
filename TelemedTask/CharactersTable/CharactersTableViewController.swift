@@ -6,7 +6,6 @@
 //  Copyright © 2017 IA. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class CharactersTableViewController: UITableViewController {
@@ -94,6 +93,15 @@ class CharactersTableViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let infoViewController = CharacterInfoViewController.controller()
+        infoViewController.character = characters[indexPath.row]
+        
+        navigationController?.pushViewController(infoViewController, animated: true)
     }
     
     func heightForCellAt(row: Int) -> CGFloat {

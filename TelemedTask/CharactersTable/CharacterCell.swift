@@ -26,7 +26,9 @@ class CharacterCell: UITableViewCell {
         }
         
         nameLabel.text = character.name
-        thumbnailImageView.sd_setImage(with: character.thumbnailUrl, placeholderImage: UIImage(color: .gray))
+        thumbnailImageView.sd_setImage(with: character.thumbnailUrl, placeholderImage: UIImage(color: .gray)) { [weak self] (image, error, cacheType, url) in
+            self?.character?.image = image
+        }
     }
     
     override func prepareForReuse() {

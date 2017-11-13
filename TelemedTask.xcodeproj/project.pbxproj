@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		13041AE5DD2E8EADFCF41E62 /* Pods_TelemedTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20CB57D5302B88A15926AF2 /* Pods_TelemedTask.framework */; };
+		CE1CE3B71FBA36F7001407CE /* CharacterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CE3B61FBA36F7001407CE /* CharacterInfoViewController.swift */; };
+		CE1CE3B91FBA3897001407CE /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CE3B81FBA3897001407CE /* UIViewController+Storyboard.swift */; };
+		CE1CE3BB1FBA3961001407CE /* NSObject+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CE3BA1FBA3961001407CE /* NSObject+Xib.swift */; };
 		CE479EB61FBA0611006C2FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */; };
 		CE479EBB1FBA0611006C2FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE479EB91FBA0611006C2FF0 /* Main.storyboard */; };
 		CE479EBD1FBA0611006C2FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		06ECC625564BBF9E698E5084 /* Pods-TelemedTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask.debug.xcconfig"; sourceTree = "<group>"; };
+		CE1CE3B61FBA36F7001407CE /* CharacterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoViewController.swift; sourceTree = "<group>"; };
+		CE1CE3B81FBA3897001407CE /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		CE1CE3BA1FBA3961001407CE /* NSObject+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Xib.swift"; sourceTree = "<group>"; };
 		CE479EB21FBA0611006C2FF0 /* TelemedTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelemedTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE479EBA1FBA0611006C2FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +78,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE1CE3B51FBA344B001407CE /* CharacterInfoTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CE3B61FBA36F7001407CE /* CharacterInfoViewController.swift */,
+			);
+			path = CharacterInfoTable;
+			sourceTree = "<group>";
+		};
 		CE479EA91FBA0611006C2FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +107,11 @@
 		CE479EB41FBA0611006C2FF0 /* TelemedTask */ = {
 			isa = PBXGroup;
 			children = (
-				CE9F88981FBA1E63008F1940 /* MarvelCharactersTable */,
+				CE1CE3B51FBA344B001407CE /* CharacterInfoTable */,
+				CE9F88981FBA1E63008F1940 /* CharactersTable */,
 				CE9F88941FBA1538008F1940 /* Models */,
 				CE4AC8511FBA0F9000FAACCD /* Library */,
 				CE479EB91FBA0611006C2FF0 /* Main.storyboard */,
-				CE479EBE1FBA0611006C2FF0 /* LaunchScreen.storyboard */,
 				CE9F88971FBA1E46008F1940 /* Application */,
 			);
 			path = TelemedTask;
@@ -119,6 +133,8 @@
 			children = (
 				CE479ECD1FBA0667006C2FF0 /* String+MD5.swift */,
 				CE4FEAC11FBA23880097BC29 /* UIImage+UIColor.swift */,
+				CE1CE3B81FBA3897001407CE /* UIViewController+Storyboard.swift */,
+				CE1CE3BA1FBA3961001407CE /* NSObject+Xib.swift */,
 			);
 			path = "Base Objects Extensions";
 			sourceTree = "<group>";
@@ -150,6 +166,7 @@
 		CE9F88971FBA1E46008F1940 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				CE479EBE1FBA0611006C2FF0 /* LaunchScreen.storyboard */,
 				CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */,
 				CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */,
 				CE479EC91FBA0631006C2FF0 /* TelemedTask-Bridging-Header.h */,
@@ -158,13 +175,13 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		CE9F88981FBA1E63008F1940 /* MarvelCharactersTable */ = {
+		CE9F88981FBA1E63008F1940 /* CharactersTable */ = {
 			isa = PBXGroup;
 			children = (
 				CE9F88991FBA1EA0008F1940 /* CharactersTableViewController.swift */,
 				CE9F889B1FBA1F3A008F1940 /* CharacterCell.swift */,
 			);
-			path = MarvelCharactersTable;
+			path = CharactersTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,10 +313,13 @@
 				CE4AC8551FBA0FD300FAACCD /* CharactersApi.swift in Sources */,
 				CE9F889A1FBA1EA0008F1940 /* CharactersTableViewController.swift in Sources */,
 				CE9F88961FBA1542008F1940 /* MarvelCharacter.swift in Sources */,
+				CE1CE3B91FBA3897001407CE /* UIViewController+Storyboard.swift in Sources */,
 				CE479ECE1FBA0667006C2FF0 /* String+MD5.swift in Sources */,
 				CE4FEAC21FBA23880097BC29 /* UIImage+UIColor.swift in Sources */,
 				CE479EB61FBA0611006C2FF0 /* AppDelegate.swift in Sources */,
+				CE1CE3B71FBA36F7001407CE /* CharacterInfoViewController.swift in Sources */,
 				CE4AC85A1FBA116E00FAACCD /* Utils.swift in Sources */,
+				CE1CE3BB1FBA3961001407CE /* NSObject+Xib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WY4UX44X6;
 				INFOPLIST_FILE = TelemedTask/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ialiev.TelemedTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WY4UX44X6;
 				INFOPLIST_FILE = TelemedTask/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ialiev.TelemedTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";

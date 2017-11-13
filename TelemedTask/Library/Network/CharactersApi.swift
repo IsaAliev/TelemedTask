@@ -23,6 +23,7 @@ class CharactersApi {
     
     convenience init(limit: Int) {
         self.init()
+        
         self.limit = limit
     }
     

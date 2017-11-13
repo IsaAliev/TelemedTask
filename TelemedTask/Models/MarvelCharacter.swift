@@ -15,6 +15,8 @@ class MarvelCharacter: Mappable {
     var name: String!
     var description: String!
     
+    var image: UIImage?
+    
     required init?(map: Map) {
         
     }
