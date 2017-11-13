@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13041AE5DD2E8EADFCF41E62 /* Pods_TelemedTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20CB57D5302B88A15926AF2 /* Pods_TelemedTask.framework */; };
 		CE479EB61FBA0611006C2FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */; };
 		CE479EB81FBA0611006C2FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479EB71FBA0611006C2FF0 /* ViewController.swift */; };
 		CE479EBB1FBA0611006C2FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE479EB91FBA0611006C2FF0 /* Main.storyboard */; };
 		CE479EBD1FBA0611006C2FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */; };
 		CE479EC01FBA0611006C2FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE479EBE1FBA0611006C2FF0 /* LaunchScreen.storyboard */; };
+		CE479ECE1FBA0667006C2FF0 /* String + MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479ECD1FBA0667006C2FF0 /* String + MD5.swift */; };
+		CE4AC8551FBA0FD300FAACCD /* CharactersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC8541FBA0FD300FAACCD /* CharactersApi.swift */; };
+		CE4AC8581FBA103600FAACCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC8571FBA103600FAACCD /* Constants.swift */; };
+		CE4AC85A1FBA116E00FAACCD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC8591FBA116E00FAACCD /* Utils.swift */; };
+		CE9F88961FBA1542008F1940 /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F88951FBA1542008F1940 /* MarvelCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06ECC625564BBF9E698E5084 /* Pods-TelemedTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask.debug.xcconfig"; sourceTree = "<group>"; };
 		CE479EB21FBA0611006C2FF0 /* TelemedTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelemedTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE479EB71FBA0611006C2FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,14 @@
 		CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE479EBF1FBA0611006C2FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE479EC11FBA0611006C2FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE479EC91FBA0631006C2FF0 /* TelemedTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TelemedTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE479ECD1FBA0667006C2FF0 /* String + MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + MD5.swift"; sourceTree = "<group>"; };
+		CE4AC8541FBA0FD300FAACCD /* CharactersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApi.swift; sourceTree = "<group>"; };
+		CE4AC8571FBA103600FAACCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE4AC8591FBA116E00FAACCD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CE9F88951FBA1542008F1940 /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
+		E20CB57D5302B88A15926AF2 /* Pods_TelemedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelemedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F648CA06ED75E4ADD4CD85BB /* Pods-TelemedTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13041AE5DD2E8EADFCF41E62 /* Pods_TelemedTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27FC6A625437BA18D987322A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06ECC625564BBF9E698E5084 /* Pods-TelemedTask.debug.xcconfig */,
+				F648CA06ED75E4ADD4CD85BB /* Pods-TelemedTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70EBBA9822B3B5059147568B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E20CB57D5302B88A15926AF2 /* Pods_TelemedTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE479EA91FBA0611006C2FF0 = {
 			isa = PBXGroup;
 			children = (
 				CE479EB41FBA0611006C2FF0 /* TelemedTask */,
 				CE479EB31FBA0611006C2FF0 /* Products */,
+				27FC6A625437BA18D987322A /* Pods */,
+				70EBBA9822B3B5059147568B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +89,60 @@
 		CE479EB41FBA0611006C2FF0 /* TelemedTask */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F88941FBA1538008F1940 /* Models */,
+				CE4AC8511FBA0F9000FAACCD /* Library */,
 				CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */,
 				CE479EB71FBA0611006C2FF0 /* ViewController.swift */,
 				CE479EB91FBA0611006C2FF0 /* Main.storyboard */,
 				CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */,
 				CE479EBE1FBA0611006C2FF0 /* LaunchScreen.storyboard */,
 				CE479EC11FBA0611006C2FF0 /* Info.plist */,
+				CE479EC91FBA0631006C2FF0 /* TelemedTask-Bridging-Header.h */,
 			);
 			path = TelemedTask;
+			sourceTree = "<group>";
+		};
+		CE4AC8511FBA0F9000FAACCD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC8561FBA102900FAACCD /* Constants */,
+				CE4AC8531FBA0FB000FAACCD /* Network */,
+				CE4AC8521FBA0F9700FAACCD /* Base Objects Extensions */,
+				CE4AC8591FBA116E00FAACCD /* Utils.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		CE4AC8521FBA0F9700FAACCD /* Base Objects Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE479ECD1FBA0667006C2FF0 /* String + MD5.swift */,
+			);
+			path = "Base Objects Extensions";
+			sourceTree = "<group>";
+		};
+		CE4AC8531FBA0FB000FAACCD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC8541FBA0FD300FAACCD /* CharactersApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE4AC8561FBA102900FAACCD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC8571FBA103600FAACCD /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CE9F88941FBA1538008F1940 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE9F88951FBA1542008F1940 /* MarvelCharacter.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE479EC41FBA0611006C2FF0 /* Build configuration list for PBXNativeTarget "TelemedTask" */;
 			buildPhases = (
+				2D6F61E7A23C1E504FC1C6C4 /* [CP] Check Pods Manifest.lock */,
 				CE479EAE1FBA0611006C2FF0 /* Sources */,
 				CE479EAF1FBA0611006C2FF0 /* Frameworks */,
 				CE479EB01FBA0611006C2FF0 /* Resources */,
+				C8A89DB30414F51C2B439DD9 /* [CP] Embed Pods Frameworks */,
+				DD9B3DA64EBD8788FF6F85B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +180,7 @@
 				TargetAttributes = {
 					CE479EB11FBA0611006C2FF0 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +216,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D6F61E7A23C1E504FC1C6C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A89DB30414F51C2B439DD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD9B3DA64EBD8788FF6F85B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE479EAE1FBA0611006C2FF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4AC8581FBA103600FAACCD /* Constants.swift in Sources */,
+				CE4AC8551FBA0FD300FAACCD /* CharactersApi.swift in Sources */,
+				CE9F88961FBA1542008F1940 /* MarvelCharacter.swift in Sources */,
+				CE479ECE1FBA0667006C2FF0 /* String + MD5.swift in Sources */,
 				CE479EB81FBA0611006C2FF0 /* ViewController.swift in Sources */,
 				CE479EB61FBA0611006C2FF0 /* AppDelegate.swift in Sources */,
+				CE4AC85A1FBA116E00FAACCD /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +410,18 @@
 		};
 		CE479EC51FBA0611006C2FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06ECC625564BBF9E698E5084 /* Pods-TelemedTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WY4UX44X6;
 				INFOPLIST_FILE = TelemedTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ialiev.TelemedTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TelemedTask/TelemedTask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +429,17 @@
 		};
 		CE479EC61FBA0611006C2FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F648CA06ED75E4ADD4CD85BB /* Pods-TelemedTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WY4UX44X6;
 				INFOPLIST_FILE = TelemedTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ialiev.TelemedTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TelemedTask/TelemedTask-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
