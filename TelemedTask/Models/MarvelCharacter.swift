@@ -10,18 +10,29 @@ import ObjectMapper
 
 class MarvelCharacter: Mappable {
     
-    var thumbnailUrl: URL?
-    var name: String
-    var description: String
+    var thumbnailUrlString: String?
+    var thumbnailExtenstion: String?
+    var name: String!
+    var description: String!
     
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        thumbnailUrl <- map["thumbnail.path"]
+        thumbnailUrlString <- map["thumbnail.path"]
+        thumbnailExtenstion <- map["thumbnail.extension"]
         name <- map["name"]
         description <- map["description"]
     }
 
+    var thumbnailUrl: URL? {
+        guard let urlString = thumbnailUrlString,
+            let extenstion = thumbnailExtenstion else {
+                return nil
+        }
+        
+        return URL(string: urlString + "/landscape_large." + extenstion)
+    }
+    
 }

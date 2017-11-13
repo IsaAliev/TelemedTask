@@ -7,5 +7,6 @@ target 'TelemedTask' do
 
 pod 'Alamofire'
 pod 'ObjectMapper'
+pod 'SDWebImage'
 
 end

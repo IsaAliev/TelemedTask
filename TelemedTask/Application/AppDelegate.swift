@@ -12,10 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let api = CharactersApi()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        CharactersApi().sendRequest()
+        api.sendRequest(completion: { (characters) in
+            print(characters.map({ $0.thumbnailUrlString }))
+        }) { (error) in
+            
+        }
         // Override point for customization after application launch.
         return true
     }

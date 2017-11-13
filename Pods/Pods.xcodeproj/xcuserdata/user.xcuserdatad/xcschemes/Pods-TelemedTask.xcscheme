@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE935C35C36651C1A294892BC6D6BAA1"
+               BlueprintIdentifier = "4BE9FF77314F93E0167CBE4C10B45B21"
                BuildableName = "Pods_TelemedTask.framework"
                BlueprintName = "Pods-TelemedTask"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE935C35C36651C1A294892BC6D6BAA1"
+            BlueprintIdentifier = "4BE9FF77314F93E0167CBE4C10B45B21"
             BuildableName = "Pods_TelemedTask.framework"
             BlueprintName = "Pods-TelemedTask"
             ReferencedContainer = "container:Pods.xcodeproj">

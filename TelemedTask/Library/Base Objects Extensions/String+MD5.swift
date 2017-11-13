@@ -1,5 +1,5 @@
 //
-//  String + MD5.swift
+//  String+MD5.swift
 //  TelemedTask
 //
 //  Created by Isa Aliev on 13.11.17.

@@ -9,32 +9,36 @@
 /* Begin PBXBuildFile section */
 		13041AE5DD2E8EADFCF41E62 /* Pods_TelemedTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20CB57D5302B88A15926AF2 /* Pods_TelemedTask.framework */; };
 		CE479EB61FBA0611006C2FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */; };
-		CE479EB81FBA0611006C2FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479EB71FBA0611006C2FF0 /* ViewController.swift */; };
 		CE479EBB1FBA0611006C2FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE479EB91FBA0611006C2FF0 /* Main.storyboard */; };
 		CE479EBD1FBA0611006C2FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */; };
 		CE479EC01FBA0611006C2FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE479EBE1FBA0611006C2FF0 /* LaunchScreen.storyboard */; };
-		CE479ECE1FBA0667006C2FF0 /* String + MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479ECD1FBA0667006C2FF0 /* String + MD5.swift */; };
+		CE479ECE1FBA0667006C2FF0 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE479ECD1FBA0667006C2FF0 /* String+MD5.swift */; };
 		CE4AC8551FBA0FD300FAACCD /* CharactersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC8541FBA0FD300FAACCD /* CharactersApi.swift */; };
 		CE4AC8581FBA103600FAACCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC8571FBA103600FAACCD /* Constants.swift */; };
 		CE4AC85A1FBA116E00FAACCD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AC8591FBA116E00FAACCD /* Utils.swift */; };
+		CE4FEAC21FBA23880097BC29 /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEAC11FBA23880097BC29 /* UIImage+UIColor.swift */; };
 		CE9F88961FBA1542008F1940 /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F88951FBA1542008F1940 /* MarvelCharacter.swift */; };
+		CE9F889A1FBA1EA0008F1940 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F88991FBA1EA0008F1940 /* CharactersTableViewController.swift */; };
+		CE9F889C1FBA1F3A008F1940 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F889B1FBA1F3A008F1940 /* CharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06ECC625564BBF9E698E5084 /* Pods-TelemedTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask.debug.xcconfig"; sourceTree = "<group>"; };
 		CE479EB21FBA0611006C2FF0 /* TelemedTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelemedTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE479EB71FBA0611006C2FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE479EBA1FBA0611006C2FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE479EBF1FBA0611006C2FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE479EC11FBA0611006C2FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE479EC91FBA0631006C2FF0 /* TelemedTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TelemedTask-Bridging-Header.h"; sourceTree = "<group>"; };
-		CE479ECD1FBA0667006C2FF0 /* String + MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + MD5.swift"; sourceTree = "<group>"; };
+		CE479ECD1FBA0667006C2FF0 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		CE4AC8541FBA0FD300FAACCD /* CharactersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApi.swift; sourceTree = "<group>"; };
 		CE4AC8571FBA103600FAACCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE4AC8591FBA116E00FAACCD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CE4FEAC11FBA23880097BC29 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
 		CE9F88951FBA1542008F1940 /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
+		CE9F88991FBA1EA0008F1940 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
+		CE9F889B1FBA1F3A008F1940 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		E20CB57D5302B88A15926AF2 /* Pods_TelemedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelemedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F648CA06ED75E4ADD4CD85BB /* Pods-TelemedTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelemedTask/Pods-TelemedTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,15 +93,12 @@
 		CE479EB41FBA0611006C2FF0 /* TelemedTask */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F88981FBA1E63008F1940 /* MarvelCharactersTable */,
 				CE9F88941FBA1538008F1940 /* Models */,
 				CE4AC8511FBA0F9000FAACCD /* Library */,
-				CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */,
-				CE479EB71FBA0611006C2FF0 /* ViewController.swift */,
 				CE479EB91FBA0611006C2FF0 /* Main.storyboard */,
-				CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */,
 				CE479EBE1FBA0611006C2FF0 /* LaunchScreen.storyboard */,
-				CE479EC11FBA0611006C2FF0 /* Info.plist */,
-				CE479EC91FBA0631006C2FF0 /* TelemedTask-Bridging-Header.h */,
+				CE9F88971FBA1E46008F1940 /* Application */,
 			);
 			path = TelemedTask;
 			sourceTree = "<group>";
@@ -116,7 +117,8 @@
 		CE4AC8521FBA0F9700FAACCD /* Base Objects Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CE479ECD1FBA0667006C2FF0 /* String + MD5.swift */,
+				CE479ECD1FBA0667006C2FF0 /* String+MD5.swift */,
+				CE4FEAC11FBA23880097BC29 /* UIImage+UIColor.swift */,
 			);
 			path = "Base Objects Extensions";
 			sourceTree = "<group>";
@@ -143,6 +145,26 @@
 				CE9F88951FBA1542008F1940 /* MarvelCharacter.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CE9F88971FBA1E46008F1940 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE479EB51FBA0611006C2FF0 /* AppDelegate.swift */,
+				CE479EBC1FBA0611006C2FF0 /* Assets.xcassets */,
+				CE479EC91FBA0631006C2FF0 /* TelemedTask-Bridging-Header.h */,
+				CE479EC11FBA0611006C2FF0 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE9F88981FBA1E63008F1940 /* MarvelCharactersTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE9F88991FBA1EA0008F1940 /* CharactersTableViewController.swift */,
+				CE9F889B1FBA1F3A008F1940 /* CharacterCell.swift */,
+			);
+			path = MarvelCharactersTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9F889C1FBA1F3A008F1940 /* CharacterCell.swift in Sources */,
 				CE4AC8581FBA103600FAACCD /* Constants.swift in Sources */,
 				CE4AC8551FBA0FD300FAACCD /* CharactersApi.swift in Sources */,
+				CE9F889A1FBA1EA0008F1940 /* CharactersTableViewController.swift in Sources */,
 				CE9F88961FBA1542008F1940 /* MarvelCharacter.swift in Sources */,
-				CE479ECE1FBA0667006C2FF0 /* String + MD5.swift in Sources */,
-				CE479EB81FBA0611006C2FF0 /* ViewController.swift in Sources */,
+				CE479ECE1FBA0667006C2FF0 /* String+MD5.swift in Sources */,
+				CE4FEAC21FBA23880097BC29 /* UIImage+UIColor.swift in Sources */,
 				CE479EB61FBA0611006C2FF0 /* AppDelegate.swift in Sources */,
 				CE4AC85A1FBA116E00FAACCD /* Utils.swift in Sources */,
 			);
@@ -416,11 +440,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WY4UX44X6;
-				INFOPLIST_FILE = TelemedTask/Info.plist;
+				INFOPLIST_FILE = TelemedTask/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ialiev.TelemedTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TelemedTask/TelemedTask-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TelemedTask/Application/TelemedTask-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,11 +459,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WY4UX44X6;
-				INFOPLIST_FILE = TelemedTask/Info.plist;
+				INFOPLIST_FILE = TelemedTask/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ialiev.TelemedTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TelemedTask/TelemedTask-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TelemedTask/Application/TelemedTask-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -16,11 +16,17 @@ class CharactersApi {
     
     let path = "characters"
     var offset = 0
-    let limit = 10
+    var limit = 20
+    var isLastPage = false
     
     var isRequestInProgress = false
     
-    func sendRequest(completion: @escaping Completion, failure: @escaping Failure) {
+    convenience init(limit: Int) {
+        self.init()
+        self.limit = limit
+    }
+    
+    func sendRequest(completion: @escaping Completion, failure: Failure? = nil) {
         let hashTuple = Utils.apiHash()
         let params = ["ts": hashTuple.timeStamp,
                       "apikey": Constants.API.publicKey,
@@ -34,18 +40,41 @@ class CharactersApi {
                 guard let strongSelf = self else {
                     return
                 }
-                
                 strongSelf.updateOffset()
                 
                 let charactersArray = strongSelf.parseResponseToModelsArray(response: value)
                 
+                if charactersArray.count < strongSelf.limit {
+                    strongSelf.isLastPage = true
+                }
+                
                 completion(charactersArray)
             case .failure(let error):
-                failure(error)
+                failure?(error)
             }
         }
     }
     
+    func requestNextPage(failure: Failure? = nil, completion: @escaping Completion) {
+        guard !isRequestInProgress else {
+            return
+        }
+        
+        sendRequest(completion: completion, failure: failure)
+    }
+    
+    func requestFromFirstPage(failure: Failure? = nil, completion: @escaping Completion) {
+        guard !isRequestInProgress else {
+            return
+        }
+        
+        offset = 0
+        requestNextPage(failure: failure, completion: completion)
+    }
+    
+}
+
+extension CharactersApi {
     private func updateOffset() {
         self.offset += self.limit
     }
@@ -63,22 +92,4 @@ class CharactersApi {
         
         return charactersArray
     }
-    
-    func requestNextPage(completion: @escaping Completion, failure: @escaping Failure) {
-        guard !isRequestInProgress else {
-            return
-        }
-        
-        sendRequest(completion: completion, failure: failure)
-    }
-    
-    func requestFromFirstPage(completion: @escaping Completion, failure: @escaping Failure) {
-        guard !isRequestInProgress else {
-            return
-        }
-        
-        offset = 0
-        requestNextPage(completion: completion, failure: failure)
-    }
-    
 }
