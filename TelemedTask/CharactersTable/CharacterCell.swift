@@ -26,7 +26,7 @@ class CharacterCell: UITableViewCell {
         }
         
         nameLabel.text = character.name
-        thumbnailImageView.sd_setImage(with: character.thumbnailUrl, placeholderImage: UIImage(color: .gray)) { [weak self] (image, error, cacheType, url) in
+        thumbnailImageView.sd_setImage(with: character.thumbnailUrlForDownloading, placeholderImage: UIImage(color: .gray)) { [weak self] (image, error, cacheType, url) in
             self?.character?.image = image
         }
     }

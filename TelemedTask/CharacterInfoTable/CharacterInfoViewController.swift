@@ -29,7 +29,7 @@ class CharacterInfoViewController: UIViewController {
         if let image = character.image {
             imageView.image = image
         } else {
-            imageView.sd_setImage(with: character.thumbnailUrl, placeholderImage: UIImage(color: .gray))
+            imageView.sd_setImage(with: character.thumbnailUrlForDownloading, placeholderImage: UIImage(color: .gray))
         }
     }
     
